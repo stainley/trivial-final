@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD077769290876B20044CEDB /* ResultAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD077768290876B20044CEDB /* ResultAnimationController.swift */; };
 		AD094ADB29058076007271F0 /* ButtonViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD094ADA29058076007271F0 /* ButtonViewHelper.swift */; };
 		AD094ADD29058A9B007271F0 /* AnswerTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD094ADC29058A9B007271F0 /* AnswerTableViewExtension.swift */; };
 		AD094AE029058D17007271F0 /* QuestionCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD094ADE29058D17007271F0 /* QuestionCustomTableViewCell.swift */; };
@@ -22,12 +23,14 @@
 		AD6BCCCE2904C47F0085117A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6BCCCD2904C47F0085117A /* Question.swift */; };
 		AD6BCCD02904C4FC0085117A /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6BCCCF2904C4FC0085117A /* QuestionData.swift */; };
 		AD6BCCD32904D0350085117A /* CardViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6BCCD22904D0350085117A /* CardViewHelper.swift */; };
+		ADCBF4FA29076BD300411D47 /* TimerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBF4F929076BD300411D47 /* TimerAnimation.swift */; };
 		ADD45C212905AA2D000B0B54 /* TimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD45C202905AA2D000B0B54 /* TimerExtension.swift */; };
 		ADD45C252905C0AB000B0B54 /* ResultModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD45C232905C0AB000B0B54 /* ResultModalViewController.swift */; };
 		ADD45C262905C0AB000B0B54 /* ResultModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD45C242905C0AB000B0B54 /* ResultModalViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD077768290876B20044CEDB /* ResultAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultAnimationController.swift; sourceTree = "<group>"; };
 		AD094ADA29058076007271F0 /* ButtonViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewHelper.swift; sourceTree = "<group>"; };
 		AD094ADC29058A9B007271F0 /* AnswerTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewExtension.swift; sourceTree = "<group>"; };
 		AD094ADE29058D17007271F0 /* QuestionCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -45,6 +48,8 @@
 		AD6BCCCD2904C47F0085117A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		AD6BCCCF2904C4FC0085117A /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 		AD6BCCD22904D0350085117A /* CardViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewHelper.swift; sourceTree = "<group>"; };
+		ADCBF4F929076BD300411D47 /* TimerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAnimation.swift; sourceTree = "<group>"; };
+		ADCBF4FB2908413100411D47 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		ADD45C202905AA2D000B0B54 /* TimerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExtension.swift; sourceTree = "<group>"; };
 		ADD45C232905C0AB000B0B54 /* ResultModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModalViewController.swift; sourceTree = "<group>"; };
 		ADD45C242905C0AB000B0B54 /* ResultModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultModalViewController.xib; sourceTree = "<group>"; };
@@ -92,6 +97,7 @@
 		AD6BCCB42904BE440085117A /* FinalProjectIOS */ = {
 			isa = PBXGroup;
 			children = (
+				ADCBF4F829076AF700411D47 /* Animation */,
 				AD6BCCD12904D0220085117A /* Helpers */,
 				AD6BCCCA2904BFDB0085117A /* Model */,
 				AD6BCCC92904BFC50085117A /* View */,
@@ -102,6 +108,7 @@
 				AD6BCCBE2904BE450085117A /* Assets.xcassets */,
 				AD6BCCC02904BE450085117A /* LaunchScreen.storyboard */,
 				AD6BCCC32904BE450085117A /* Info.plist */,
+				ADCBF4FB2908413100411D47 /* MyPlayground.playground */,
 			);
 			path = FinalProjectIOS;
 			sourceTree = "<group>";
@@ -134,11 +141,20 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		ADCBF4F829076AF700411D47 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				ADCBF4F929076BD300411D47 /* TimerAnimation.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		ADD45C222905C072000B0B54 /* Result */ = {
 			isa = PBXGroup;
 			children = (
 				ADD45C232905C0AB000B0B54 /* ResultModalViewController.swift */,
 				ADD45C242905C0AB000B0B54 /* ResultModalViewController.xib */,
+				AD077768290876B20044CEDB /* ResultAnimationController.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -226,6 +242,8 @@
 				AD094ADD29058A9B007271F0 /* AnswerTableViewExtension.swift in Sources */,
 				AD6BCCB62904BE440085117A /* AppDelegate.swift in Sources */,
 				AD6BCCD02904C4FC0085117A /* QuestionData.swift in Sources */,
+				AD077769290876B20044CEDB /* ResultAnimationController.swift in Sources */,
+				ADCBF4FA29076BD300411D47 /* TimerAnimation.swift in Sources */,
 				AD6BCCCC2904BFEF0085117A /* QuestionViewController.swift in Sources */,
 				AD6BCCB82904BE440085117A /* SceneDelegate.swift in Sources */,
 				AD094AE329059B67007271F0 /* CellCustomHelper.swift in Sources */,

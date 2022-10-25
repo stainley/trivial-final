@@ -18,11 +18,18 @@ extension QuestionViewController: UITableViewDataSource, PopUpModalDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let optionsCell = tableView.dequeueReusableCell(withIdentifier: "QuestionCustomTableViewCell", for: indexPath) as! QuestionCustomTableViewCell
-        optionsCell.selectionStyle = .none
+        optionsCell.selectionStyle = .none       
         optionsCell.questionCellLabel.text = currentQuestion.answers[indexPath.row].description
+        
+        UIView.animate(withDuration: 0.5, delay: 0.05 * Double(indexPath.row), animations: {
+            self.answersTableView.alpha = 1
+            optionsCell.center.x += self.view.bounds.width
+            optionsCell.clipsToBounds = true
+        })
+        
         return optionsCell
     }
-        
+    
     /**
      * Call for the next question and update the UI
      */
@@ -56,8 +63,7 @@ extension QuestionViewController: UITableViewDelegate {
         
         if let question = currentQuestion {
             let answer = question.answers[indexPath.row]
-            print("Answer is: \(indexPath.row)")
-            
+          
             if checkAnswer(answer: answer, question: question) {
                 // correct
                 finalResult += 1
@@ -68,7 +74,6 @@ extension QuestionViewController: UITableViewDelegate {
             }
             nextQuestion()
         }
-        print("Answer is: \(indexPath.row)")
         return indexPath
     }
 }

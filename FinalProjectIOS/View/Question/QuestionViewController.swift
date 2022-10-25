@@ -24,15 +24,18 @@ class QuestionViewController: UIViewController {
         }
     }
     var finalResult: Int = 0
+    let animation = TimerAnimation()
     
     var time: Timer?
     var seconds = 25 {
         didSet {
             timerLabel.text = "\(seconds)"
+            animation.pulseAnimation(uilabel: timerLabel, active: false)
             
             if seconds > 0 && seconds < 10 {
+                animation.pulseAnimation(uilabel: timerLabel, active: true)
                 timerLabel.textColor = .red
-            }
+            }            
         }
     }
     
@@ -45,12 +48,17 @@ class QuestionViewController: UIViewController {
         answersTableView.showsVerticalScrollIndicator = false
   
         time = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
-
         loadQuestionUI(question: questions[questionNumber])
       
         registerTableViewCells()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        answersTableView.center.x -=  self.view.bounds.width
+        answersTableView.alpha = 0        
+    }
+       
     func registerTableViewCells() {
         let contentCell = UINib(nibName: "QuestionCustomTableViewCell", bundle: nil)
         self.answersTableView.register(contentCell, forCellReuseIdentifier: "QuestionCustomTableViewCell")
@@ -61,7 +69,6 @@ class QuestionViewController: UIViewController {
         timerLabel.textColor = .black
         questionLabel.text = question.description
         currentQuestion = question
-
         answersTableView.reloadData()
     }
     
@@ -73,7 +80,7 @@ class QuestionViewController: UIViewController {
         self.dismiss(animated: false)
     }
     
-    func onAnswered() -> (answered: Int, totalQuestion: Int) {
+    func onAnswered() -> FinalResult {
         
         return (answered: finalResult, totalQuestion: maximun_question)
     }
