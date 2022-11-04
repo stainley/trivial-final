@@ -16,17 +16,18 @@ class QuestionViewController: UIViewController {
     
     let maximun_question = 3
     var currentQuestion: Question!
+    // questions data
     var questions: [Question]!
-    
+    var finalResult: Int = 0
+    let animation = TimerAnimation()
+    var time: Timer?
+        
     var questionNumber: Int = 0 {
         didSet {
             remainingQuestion.text = "\(questionNumber)/\(maximun_question)"
         }
     }
-    var finalResult: Int = 0
-    let animation = TimerAnimation()
-    
-    var time: Timer?
+
     var seconds = 25 {
         didSet {
             timerLabel.text = "\(seconds)"
@@ -40,23 +41,24 @@ class QuestionViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        remainingQuestion.text = "\(questionNumber)/\(maximun_question)"
         answersTableView.dataSource = self
         answersTableView.delegate = self
         
         answersTableView.separatorStyle = .none
         answersTableView.showsVerticalScrollIndicator = false
-  
-        time = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
-        loadQuestionUI(question: questions[questionNumber])
-      
         registerTableViewCells()
+        
+        time = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
+        
+        //remainingQuestion.text = "\(questionNumber)/\(maximun_question)"
+        loadQuestionUI(question: questions[questionNumber])
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         answersTableView.center.x -=  self.view.bounds.width
-        answersTableView.alpha = 0        
+        answersTableView.alpha = 0
     }
        
     func registerTableViewCells() {
@@ -76,12 +78,19 @@ class QuestionViewController: UIViewController {
         return question.answers.contains(where: {$0.description == answer.description}) && answer.correct
     }
     
-    func questionViewToDismiss() {
+    func retry() {
+        // Load all questions again        
+        self.questions = QuestionData().loadQuestion()
+        self.questionNumber = 0
+        self.finalResult = 0
+        self.viewDidLoad()
+    }
+    
+    func goToMainScreen() {
         self.dismiss(animated: false)
     }
     
     func onAnswered() -> FinalResult {
-        
         return (answered: finalResult, totalQuestion: maximun_question)
     }
 }

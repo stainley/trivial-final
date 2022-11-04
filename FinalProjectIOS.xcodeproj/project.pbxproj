@@ -11,7 +11,6 @@
 		AD094ADB29058076007271F0 /* ButtonViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD094ADA29058076007271F0 /* ButtonViewHelper.swift */; };
 		AD094ADD29058A9B007271F0 /* AnswerTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD094ADC29058A9B007271F0 /* AnswerTableViewExtension.swift */; };
 		AD094AE029058D17007271F0 /* QuestionCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD094ADE29058D17007271F0 /* QuestionCustomTableViewCell.swift */; };
-		AD094AE129058D17007271F0 /* QuestionCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD094ADF29058D17007271F0 /* QuestionCustomTableViewCell.xib */; };
 		AD094AE329059B67007271F0 /* CellCustomHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD094AE229059B67007271F0 /* CellCustomHelper.swift */; };
 		AD6BCCB62904BE440085117A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6BCCB52904BE440085117A /* AppDelegate.swift */; };
 		AD6BCCB82904BE440085117A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6BCCB72904BE440085117A /* SceneDelegate.swift */; };
@@ -27,6 +26,7 @@
 		ADD45C212905AA2D000B0B54 /* TimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD45C202905AA2D000B0B54 /* TimerExtension.swift */; };
 		ADD45C252905C0AB000B0B54 /* ResultModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD45C232905C0AB000B0B54 /* ResultModalViewController.swift */; };
 		ADD45C262905C0AB000B0B54 /* ResultModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD45C242905C0AB000B0B54 /* ResultModalViewController.xib */; };
+		ADE6D1CC2915835B00A78793 /* QuestionCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE6D1CB2915835B00A78793 /* QuestionCustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,6 @@
 		AD094ADA29058076007271F0 /* ButtonViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewHelper.swift; sourceTree = "<group>"; };
 		AD094ADC29058A9B007271F0 /* AnswerTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewExtension.swift; sourceTree = "<group>"; };
 		AD094ADE29058D17007271F0 /* QuestionCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCustomTableViewCell.swift; sourceTree = "<group>"; };
-		AD094ADF29058D17007271F0 /* QuestionCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = QuestionCustomTableViewCell.xib; path = FinalProjectIOS/View/Question/QuestionCustomTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		AD094AE229059B67007271F0 /* CellCustomHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCustomHelper.swift; sourceTree = "<group>"; };
 		AD6BCCB22904BE440085117A /* FinalProjectIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProjectIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6BCCB52904BE440085117A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,10 +48,10 @@
 		AD6BCCCF2904C4FC0085117A /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 		AD6BCCD22904D0350085117A /* CardViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewHelper.swift; sourceTree = "<group>"; };
 		ADCBF4F929076BD300411D47 /* TimerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAnimation.swift; sourceTree = "<group>"; };
-		ADCBF4FB2908413100411D47 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		ADD45C202905AA2D000B0B54 /* TimerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExtension.swift; sourceTree = "<group>"; };
 		ADD45C232905C0AB000B0B54 /* ResultModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModalViewController.swift; sourceTree = "<group>"; };
 		ADD45C242905C0AB000B0B54 /* ResultModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultModalViewController.xib; sourceTree = "<group>"; };
+		ADE6D1CB2915835B00A78793 /* QuestionCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionCustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +68,9 @@
 		AD4F4F352906CEF7006AD6DA /* Question */ = {
 			isa = PBXGroup;
 			children = (
+				ADE6D1CB2915835B00A78793 /* QuestionCustomTableViewCell.xib */,
 				ADD45C202905AA2D000B0B54 /* TimerExtension.swift */,
 				AD094ADC29058A9B007271F0 /* AnswerTableViewExtension.swift */,
-				AD094ADF29058D17007271F0 /* QuestionCustomTableViewCell.xib */,
 				AD094ADE29058D17007271F0 /* QuestionCustomTableViewCell.swift */,
 				AD6BCCCB2904BFEF0085117A /* QuestionViewController.swift */,
 			);
@@ -108,7 +107,6 @@
 				AD6BCCBE2904BE450085117A /* Assets.xcassets */,
 				AD6BCCC02904BE450085117A /* LaunchScreen.storyboard */,
 				AD6BCCC32904BE450085117A /* Info.plist */,
-				ADCBF4FB2908413100411D47 /* MyPlayground.playground */,
 			);
 			path = FinalProjectIOS;
 			sourceTree = "<group>";
@@ -144,6 +142,7 @@
 		ADCBF4F829076AF700411D47 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				AD077768290876B20044CEDB /* ResultAnimationController.swift */,
 				ADCBF4F929076BD300411D47 /* TimerAnimation.swift */,
 			);
 			path = Animation;
@@ -154,7 +153,6 @@
 			children = (
 				ADD45C232905C0AB000B0B54 /* ResultModalViewController.swift */,
 				ADD45C242905C0AB000B0B54 /* ResultModalViewController.xib */,
-				AD077768290876B20044CEDB /* ResultAnimationController.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -219,8 +217,8 @@
 			files = (
 				AD6BCCC22904BE450085117A /* LaunchScreen.storyboard in Resources */,
 				ADD45C262905C0AB000B0B54 /* ResultModalViewController.xib in Resources */,
+				ADE6D1CC2915835B00A78793 /* QuestionCustomTableViewCell.xib in Resources */,
 				AD6BCCBF2904BE450085117A /* Assets.xcassets in Resources */,
-				AD094AE129058D17007271F0 /* QuestionCustomTableViewCell.xib in Resources */,
 				AD6BCCBD2904BE440085117A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,8 +397,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -427,8 +426,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

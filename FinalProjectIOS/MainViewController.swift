@@ -8,25 +8,28 @@
 import UIKit
 
 class MainViewController: UIViewController {
-   
     
     @IBAction func playQuiz(_ sender: UIButton) {
-        let quizData = QuestionData().loadQuestion()
         let questionViewController = self.storyboard?.instantiateViewController(withIdentifier: "questionID") as? QuestionViewController
         
         guard let questionView = questionViewController else {
-            
             return
         }
         questionView.modalPresentationStyle = .fullScreen
-        questionView.questions = quizData
+        questionView.questions = startQuiz()
+        
         self.show(questionView, sender: self)
     }
         
+    func startQuiz() -> [Question] {
+        let quizData = QuestionData()
+        
+        return quizData.loadQuestion()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 
 }
 

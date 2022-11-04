@@ -7,33 +7,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D99436F0-47CE-49FA-BF6A-79C2E0E19D60"
+            uuid = "5B60D3B9-6EF3-4673-886C-7D68E030311E"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FinalProjectIOS/View/Result/ResultModalViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "animationController(forPresented:presenting:source:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6B349D91-5FFC-4F21-A537-C2DBCE9F0FE2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FinalProjectIOS/View/Result/ResultAnimationController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "presentAnimation(with:viewToAnimate:)"
-            landmarkType = "7">
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "result"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

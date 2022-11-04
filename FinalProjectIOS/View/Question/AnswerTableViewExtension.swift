@@ -53,7 +53,6 @@ extension QuestionViewController: UITableViewDataSource, PopUpModalDelegate {
     }
 }
 
-
 /**
  Table delegate extension
  **/
